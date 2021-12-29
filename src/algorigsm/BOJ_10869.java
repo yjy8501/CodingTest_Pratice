@@ -48,5 +48,7 @@ public class BOJ_10869 {
 	temp++;
 	        }
 		}
+	
 }
+
 
