@@ -1,4 +1,3 @@
-//제출한 답안
 package algorigsm;
 
 import java.util.HashMap;
