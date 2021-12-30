@@ -14,7 +14,6 @@ public class BOJ_1032 {
 		for(i = 0;i<n;i++) {
 			result[i] = sc.next();
 		}
-		boolean a = true;
 		for(i =0; i<n;i++) {
 			for(int j = 0;j<result[0].length();j++) {
 				if(result[i].charAt(j) != result[i+1].charAt(j)) {
@@ -23,8 +22,8 @@ public class BOJ_1032 {
 					System.out.print(result[i].charAt(j));
 				}
 			}
+			sc.close();
 		}
-		sc.close();
 	}
 }
 	
