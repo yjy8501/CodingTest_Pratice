@@ -18,6 +18,7 @@ public class BOJ_1075 {
         		return;
         	}
         	temp++;
+        	sc.close();
         }
 	}
 }
