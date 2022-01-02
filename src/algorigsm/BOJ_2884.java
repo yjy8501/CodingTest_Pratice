@@ -9,17 +9,18 @@ public class BOJ_2884 {
 		
 		int h = sc.nextInt();
 		int m = sc.nextInt();
-		int a = 0;
-		m = m -45;
-		if(m <= 60) {
-			a = 60+m;
-			m = a;
-			h = h -1;
+		
+		if(m < 45) {
+			h--;
+			m = 60-(45-m);
+			if(h < 0) {
+				h = 23;
+			}
+			System.out.println(h+" "+m);
+		}else {
+			System.out.println(h+" "+(m-45));
 		}
-		if(h <= 0) {
-			h = 23;
-		}
-		System.out.printf("%d %d",h,m);
+		
 		sc.close();
 	}
 
