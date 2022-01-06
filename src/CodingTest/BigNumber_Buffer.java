@@ -24,13 +24,13 @@ public class BigNumber_Buffer {
 				array[index++] = Integer.parseInt(str.nextToken());
 			}
 			Arrays.sort(array);
-			int back1 = array[n-1];
+			int back = array[n-1];
 			int back2 = array[n-2];
 			
 			while(true) {
 				if(m == 0) break;
 				for(int i = 0;i<k;i++) {
-					sum += back1;
+					sum += back;
 					m-=1;
 					if(m==0) break;
 				}
