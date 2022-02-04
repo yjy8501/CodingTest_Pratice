@@ -23,4 +23,3 @@ for i in range(N):
         for j in range(int(len(sequence) / 2) + 1):
             ans = heapq.heappop(second)
         print(ans[1])
-
