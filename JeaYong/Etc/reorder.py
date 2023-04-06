@@ -12,7 +12,9 @@ for x in range(M): # M만큼 반복한다
 
     for y in range(len(shuffle)): # 슬라이싱한 부분을 j 뒤로 붙혀준다
         bag.insert(y+j, shuffle.pop(0))
+
     del bag[i-1 : k-1] # 슬라이싱 한 부분을 제거한다
+
 print(' '.join(map(str,bag)))
 
 
